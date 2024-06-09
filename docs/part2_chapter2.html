@@ -14,19 +14,19 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
@@ -34,15 +34,15 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -71,27 +71,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -113,8 +109,13 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -219,7 +220,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -228,7 +229,7 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
@@ -443,7 +444,7 @@ document.write(`
 <section id="steptype">
 <h2>StepType<a class="headerlink" href="#steptype" title="Link to this heading">#</a></h2>
 <p>Before putting everything together into a circuit, we need to define the step types first. Remember that the Fibonacci circuit is composed of one single step type, defined as 3 signals “a”, “b”, and “c”, plus three constraints <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">+</span> <span class="pre">b</span> <span class="pre">==</span> <span class="pre">c</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span> <span class="pre">==</span> <span class="pre">a.next</span></code>, and <code class="docutils literal notranslate"><span class="pre">c</span> <span class="pre">==</span> <span class="pre">b.next</span></code>, where “next” means the same signal in the next step instance:</p>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-center"><p>Step Type</p></th>
 <th class="head text-center"><p>Step Instance Index</p></th>
@@ -512,6 +513,7 @@ document.write(`
 </tr>
 </tbody>
 </table>
+</div>
 <p>PyChiquito provides a <code class="docutils literal notranslate"><span class="pre">StepType</span></code> parent class that we can customarily inherit. For each <code class="docutils literal notranslate"><span class="pre">StepType</span></code>, we need to define two functions:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">setup</span></code>, which defines constraints using signals</p></li>
@@ -681,11 +683,11 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ASTCircuit(
 	step_types={
-		93901308915500847728523964379688471050: ASTStepType(
-			id=93901308915500847728523964379688471050,
+		9802206441808114606961576053008108042: ASTStepType(
+			id=9802206441808114606961576053008108042,
 			name=&#39;fibo_step&#39;,
 			signals=[
-				InternalSignal(id=93901316362948124069796162437699471882, annotation=&#39;c&#39;)
+				InternalSignal(id=9802214364624366032856310827002235402, annotation=&#39;c&#39;)
 			],
 			constraints=[
 				Constraint(
@@ -699,21 +701,21 @@ document.write(`
 			],
 			lookups=[],
 			annotations={
-				93901316362948124069796162437699471882: c
+				9802214364624366032856310827002235402: c
 			}
 		)
 	},
 	forward_signals=[
-		ForwardSignal(id=93901288395406756533454512026947291658, phase=0, annotation=&#39;a&#39;),
-		ForwardSignal(id=93901302260335196531608198965378025994, phase=0, annotation=&#39;b&#39;)
+		ForwardSignal(id=9802184416378935637970235687835404810, phase=0, annotation=&#39;a&#39;),
+		ForwardSignal(id=9802199548957975862041570139244726794, phase=0, annotation=&#39;b&#39;)
 	],
 	shared_signals=[],
 	fixed_signals=[],
 	exposed=[],
 	annotations={
-		93901288395406756533454512026947291658: a,
-		93901302260335196531608198965378025994: b,
-		93901308915500847728523964379688471050: fibo_step
+		9802184416378935637970235687835404810: a,
+		9802199548957975862041570139244726794: b,
+		9802206441808114606961576053008108042: fibo_step
 	},
 	fixed_assignments=None,
 	first_step=None,
@@ -744,7 +746,7 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>TraceWitness(
 	step_instances={
 		StepInstance(
-			step_type_uuid=93901308915500847728523964379688471050,
+			step_type_uuid=9802206441808114606961576053008108042,
 			assignments={
 				a = 1,
 				b = 1,
@@ -752,7 +754,7 @@ document.write(`
 			},
 		),
 		StepInstance(
-			step_type_uuid=93901308915500847728523964379688471050,
+			step_type_uuid=9802206441808114606961576053008108042,
 			assignments={
 				a = 1,
 				b = 2,
@@ -760,7 +762,7 @@ document.write(`
 			},
 		),
 		StepInstance(
-			step_type_uuid=93901308915500847728523964379688471050,
+			step_type_uuid=9802206441808114606961576053008108042,
 			assignments={
 				a = 2,
 				b = 3,
@@ -768,7 +770,7 @@ document.write(`
 			},
 		),
 		StepInstance(
-			step_type_uuid=93901308915500847728523964379688471050,
+			step_type_uuid=9802206441808114606961576053008108042,
 			assignments={
 				a = 3,
 				b = 5,
@@ -789,7 +791,51 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ok(
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>------ Visiting map -------
+key = annotations
+key = exposed
+key = first_step
+key = fixed_assignments
+key = fixed_signals
+key = forward_signals
+key = id
+key = last_step
+key = num_steps
+key = q_enable
+key = shared_signals
+key = step_types
+------ Visiting step_types -------
+step_types = Some(
+    {
+        9802206441808114606961576053008108042: StepType {
+            id: 9802206441808114606961576053008108042,
+            signals: [
+                InternalSignal {
+                    id: 9802214364624366032856310827002235402,
+                    annotation: &quot;c&quot;,
+                },
+            ],
+            constraints: [
+                Constraint {
+                    annotation: &quot;((a + b) == c)&quot;,
+                    expr: (a + b + (-c)),
+                },
+            ],
+            transition_constraints: [
+                TransitionConstraint {
+                    annotation: &quot;(b == next(a))&quot;,
+                    expr: (b + (-next(a))),
+                },
+                TransitionConstraint {
+                    annotation: &quot;(c == next(b))&quot;,
+                    expr: (c + (-next(b))),
+                },
+            ],
+            lookups: [],
+        },
+    },
+)
+Ok(
     (),
 )
 </pre></div>
@@ -828,7 +874,7 @@ document.write(`
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -922,8 +968,8 @@ By Leo Lara, Steve Wang
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
 
   <footer class="bd-footer">
   </footer>
