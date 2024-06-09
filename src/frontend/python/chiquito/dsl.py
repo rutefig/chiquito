@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import List, Dict
+from typing import List, Dict, Union
 from enum import Enum
 from typing import Callable, Any
 
@@ -225,6 +225,15 @@ class Circuit:
         witness_json: str = witness.get_witness_json()
         rust_chiquito.halo2_mock_prover(witness_json, self.rust_id, k)
 
+    def to_pil(
+        self: Circuit, witness: TraceWitness, circuit_name: str = "Circuit"
+    ) -> str:
+        if self.rust_id == 0:
+            ast_json: str = self.get_ast_json()
+            self.rust_id: int = rust_chiquito.ast_to_halo2(ast_json)
+        witness_json: str = witness.get_witness_json()
+        rust_chiquito.to_pil(witness_json, self.rust_id, circuit_name)
+
     def __str__(self: Circuit) -> str:
         return self.ast.__str__()
 
@@ -286,4 +295,4 @@ class StepType:
         self.step_type.lookups.append(lookup)
 
 
-LookupBuilder = LookupTableBuilder | InPlaceLookupBuilder
+LookupBuilder = Union[LookupTableBuilder, InPlaceLookupBuilder]
